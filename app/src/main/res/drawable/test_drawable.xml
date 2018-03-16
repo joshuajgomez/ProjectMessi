@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:width="400dp"
+        android:height="650dp"
+        android:drawable="@color/colorPrimary" />
+
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/logo" />
+    </item>
+
+    <item
+        android:bottom="400dp"
+        android:left="120dp">
+        <bitmap
+            android:gravity="top"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo" />
+    </item>
+
+    <item
+        android:bottom="50dp">
+        <bitmap
+            android:gravity="bottom"
+            android:layout_height="match_parent"
+            android:src="@drawable/person" />
+    </item>
+
+
+
+</layer-list>

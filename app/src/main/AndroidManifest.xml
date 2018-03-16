@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.josh.gomez.projectmessi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".module.main.MainView">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".module.messEntry.MessEntryView" />
+        <activity android:name=".module.userInfo.UserActivity" />
+        <activity android:name=".module.credits.CreditActivity" />
+
+        <receiver android:name=".service.alarmReceiver.AlarmReceiver" />
+        <receiver
+            android:name=".service.rebootReceiver.RebootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".module.settings.SettingsActivity" />
+        <activity android:name=".module.report.report.reportActivity" />
+        <activity android:name=".module.settings.iconSettings.IconListActivity" />
+        <activity
+            android:name=".module.splashScreen.SplashActivity"
+            android:theme="@style/SplashScreen"></activity>
+    </application>
+
+</manifest>

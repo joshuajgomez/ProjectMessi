@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Notification">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="NOTIFICATION_FLAG"
+            android:summaryOff="Disabled"
+            android:summaryOn="Enabled"
+            android:title="Notify me to update mess" />
+
+        <com.josh.gomez.projectmessi.module.settings.TimePreference
+            android:defaultValue="12:00"
+            android:dependency="NOTIFICATION_FLAG"
+            android:dialogTitle=""
+            android:key="time"
+            android:summary="12:00 am"
+            android:title="Notify me at" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="About">
+        <Preference
+            android:key="version_name"
+            android:summary="v1.0.0.0"
+            android:title="Build version" />
+    </PreferenceCategory>
+</PreferenceScreen>

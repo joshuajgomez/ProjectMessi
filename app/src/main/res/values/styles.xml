@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+    </style>
+
+    <style name="SplashScreen" parent="AppTheme.NoActionBar">
+        <item name="android:background">@drawable/launcher_screen</item>
+    </style>
+
+    <style name="DarkButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/Offwhite</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+</resources>

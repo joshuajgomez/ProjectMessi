@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="icon_res_id">
+        <item>lunch</item>
+        <item>omelet</item>
+        <item>dinner</item>
+    </string-array>
+
+    <string-array name="icon_name">
+        <item>Lunch bag</item>
+        <item>Omelet</item>
+        <item>Turkey</item>
+    </string-array>
+
+</resources>

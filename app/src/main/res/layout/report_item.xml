@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/wer"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:alpha="0.5"
+        app:srcCompat="@mipmap/file" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/wer"
+        android:text="April 2018"
+        android:textColor="@color/Offwhite"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/date"
+        android:alpha="0.5"
+        android:text="2345"
+        android:textColor="@color/Offwhite"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>
