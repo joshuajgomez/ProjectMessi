@@ -1,6 +1,6 @@
 package com.josh.gomez.projectmessi.module.settings;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.josh.gomez.projectmessi.R;

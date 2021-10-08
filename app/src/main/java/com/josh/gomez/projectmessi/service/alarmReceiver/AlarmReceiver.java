@@ -9,7 +9,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.media.RingtoneManager;
 import android.os.Build;
-import android.support.v4.app.NotificationCompat;
+import androidx.core.app.NotificationCompat;
 
 import com.josh.gomez.projectmessi.R;
 import com.josh.gomez.projectmessi.generic.repository.Constants;
